@@ -1,0 +1,152 @@
+/*Basic style */
+*{box-sizing: border-box;}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #1e556a;
+    color: #fff;
+}
+
+.headline{
+    max-width: 40%;
+    color: #ffc907e3;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+/* entries section */
+.holder{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.holder2{
+    margin-top: 5px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #fff;
+}
+
+.holder textarea, input{
+    font-size: 1.5em;
+    padding: 5px;
+    margin: 3px;
+    background-color: transparent;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    color: #c1dce7;
+}
+
+.holder textarea:focus, input:focus{
+    border: 1px solid #ffc907e3;
+    color: #ffc907e3;
+}
+
+::placeholder{
+    font-size: 1em;
+    color: #aaa;
+}
+
+.holder button{
+    color: #1e556a;
+    background-color: #64838fba;
+    padding: 5px;
+    margin: 3px;
+    background-color: #ffc907e3;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.holder button:hover{
+    border: 1px solid #ffc907e3;
+    background-color: #588396;
+    color: #ffc907e3;
+}
+
+/* error message section */
+.error{
+    padding: 15px 5px;
+    margin: 10px 5px;
+    background-color: #c50000;
+    border: 2px solid #fd8686;
+    color: #fff;
+    font-size: .9em;
+    opacity: 0;
+    font-weight: bold;
+    width: 95%;
+}
+
+/* showing data section */
+.entryHolder{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin: calc(100vh/3) auto;
+    position: relative;
+    background-color: #ffc907e3;
+    opacity: 0;  
+}
+
+.entryHolder .temp{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    font-size: 5em;
+    font-weight: bold;
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    text-align: center;
+    line-height: 300px;
+    color: #1e556a;
+}
+
+span{
+    font-size: larger;
+}
+
+sup{
+    position: absolute;
+    top: -75px;
+    right: 110px;
+}
+
+.entryHolder .date{
+    font-weight: bold;
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 0px;
+    left: -30px;
+    font-size: 1.5em;
+    color: #ccc;
+}
+
+.entryHolder .main{
+    font-size: 1.5em;
+    position: absolute;
+    top: 110px;
+    left: 40px;
+    font-size: 1.5em;
+    color: #1e556a;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+.entryHolder .content{
+    font-size: 1.5em;
+    color: #ccc;
+    position: absolute;
+    top: -10px;
+    right: -30px;
+    font-weight: bold;
+}
+

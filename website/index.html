@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather Journal</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div id = "app">
+      <h2 class="headline">weather journal</h2>
+      <div class ="holder">
+        <!--Entries section-->
+        <div class="holder2">
+          <input onfocus="hideError()" type="text" id="zip" placeholder="enter zip code here" >
+          <textarea onfocus="hideError()" class= "myInput" id="feelings" placeholder="How do you feel?" ></textarea>
+          <button id="generate" type = "submit"> show weather </button>
+        </div>
+        <!--Error message-->
+        <div id="error" class="error"></div>
+      </div>
+      <!--fetched data section-->
+      <div id = "entryHolder" class="entryHolder">
+        <div id = "date" class="date"></div> 
+        <div id = "main" class="main"></div> 
+        <div id = "temp" class="temp"></div>
+        <div id = "content" class="content info"></div>
+      </div>
+    </div>
+    <script src="./js/app.js" type="text/javascript"></script>
+  </body>
+</html>
